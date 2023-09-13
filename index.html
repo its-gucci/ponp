@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>ProbNeRF</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--    <meta property="og:image" content="https://probnerf.github.io/img/titlecard.jpg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630"> -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ponp.github.io">
+    <meta property="og:title" content="Generalizable Neural Fields as Partially Observed Neural Processes">
+    <meta property="og:description" content="Neural processes outperform gradient-based meta-learning and hypernetworks for neural field generalization.">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Generalizable Neural Fields as Partially Observed Neural Processes">
+    <meta name="twitter:description" content="Neural processes outperform gradient-based meta-learning and hypernetworks for neural field generalization.">
+<!--    <meta name="twitter:image" content="https://dorverbin.github.io/refnerf/img/refnerf_titlecard.jpg"> -->
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                Generalizable Neural Fields as Partially Observed Neural Processes<br>
+                <small>
+                    ICCV 2023 (Poster)
+                </small>
+            </h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                        <li>
+                            <a style="text-decoration:none" href="http://matthewdhoffman.com/">
+                              Jeffrey Gu
+                            </a>
+                            <br>Stanford ICME
+                        </li>
+                        <li>
+                            <a style="text-decoration:none" href="https://www.tuananhle.co.uk/">
+                              Kuan-Chieh Wang
+                            </a>
+                            <br>Stanford CS
+                        </li>
+                        <li>
+                            <a style="text-decoration:none" href="https://research.google/people/PavelSountsov/">
+                              Serena Yeung
+                            </a>
+                            <br>Stanford CS
+                        </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/abs/2210.17415">
+                            <img src="./img/paper.png" alt="paper" height="60">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>                            
+                        <li>
+                            <a href="#" target="_blank">
+                            <img src="img/Google_Colaboratory_SVG_Logo.svg" alt="colab" height="60">
+                                <h4><strong>Code</strong>(coming soon)</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                  Neural fields, which represent signals as a function parameterized by a neural network, are a promising alternative to traditional discrete vector or grid-based representations. Compared to discrete representations, neural representations both scale well with increasing resolution, are continuous, and can be many-times differentiable. However, given a dataset of signals that we would like to represent, having to optimize a separate neural field for each signal is inefficient, and cannot capitalize on shared information or structures among signals. Existing generalization methods view this as a meta-learning problem and employ gradient-based meta-learning to learn an initialization which is then fine-tuned with test-time optimization, or learn hypernetworks to produce the weights of a neural field. We instead propose a new paradigm that views the large-scale training of neural representations as a part of a partially-observed neural process framework, and leverage neural process algorithms to solve this task. We demonstrate that this approach outperforms both state-of-the-art gradient-based meta-learning approaches and hypernetwork approaches.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+             
+                    <br>
+                The website template was borrowed from <a href="https://probnerf.github.io/">ProbNeRF</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>
